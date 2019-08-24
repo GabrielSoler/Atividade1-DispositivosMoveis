@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.min.css">
+
+</head>
+
+<body>
+
+	<input type="radio" name="opcao" id="opcao-bolos" checked>
+	<label for="opcao-bolos">
+			<i class="fas fa-birthday-cake"></i>
+			Bolos
+	</label>
+
+	<input type="radio" name="opcao" id="opcao-bebidas">
+	<label for="opcao-bebidas"  >
+			<i class="fas fa-coffee"></i>
+		Bebidas
+	</label>
+
+	<button type="button" id ="fazerPedido" class="btn btn-success"data-toggle="modal" data-target="#modal">Fazer pedido</button>
+
+
+	<div class="container-menus">
+		<img src="imagens/menu-bolos.png" alt="Nossos bolos" id="menu-bolos" class="menu">
+		<img src="imagens/menu-bebidas.png" alt="As Bebidas" id="menu-bebidas" class="menu">
+	</div>
+
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLabel">Criação de pedido</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+				  <form>
+					<div class="form-group">
+					  <span for="recipient-name" class="col-form-label">Mesa:</span>
+					  <input type="text" class="form-control" id="recipient-name">
+					</div>
+					<div class="form-group">
+					  <span for="message-text" class="col-form-label">Pedido:</span>
+					  <textarea class="form-control" id="message-text"></textarea>
+					</div>
+				  </form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				  <button type="button" class="btn btn-primary">Enviar pedido</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+
+	<script src="js/menu.js"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
